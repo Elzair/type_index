@@ -8,3 +8,5 @@ target_include_directories(boost_type_index BEFORE INTERFACE ${CMAKE_CURRENT_SOU
 
 install(TARGETS boost_type_index DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::type_index ALIAS boost_type_index)
